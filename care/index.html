@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>员工关怀</title>
+    <style type="text/css">
+      .van-dialog {
+        width: 60% !important;
+      }
+      .van-dialog .van-dialog__content{
+        text-align: center;
+      }
+      .van-dialog .van-button--large {
+        height: 40px !important;
+        line-height: 40px !important;
+      }
+      .van-dialog .van-dialog__confirm {
+        color: rgb(7, 125, 241);
+      }
+      .van-picker {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      .van-hairline--top-bottom .van-picker__cancel {
+        color: #999 !important;
+      }
+      .lunar .van-picker__title {
+        color: red !important;
+      }
+    </style>
+    <script type="text/javascript" src="./static/js/calendar.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script type="text/javascript">
+      var s = Math.random()*10;
+      document.getElementById('app').innerHTML = "<img src='/checkcode.jsp?rnd="+s+"'/>";
+    </script>
+  </body>
+</html>

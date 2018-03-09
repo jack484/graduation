@@ -1,0 +1,109 @@
+textarea
+  resize:none
+  -webkit-appearance: none
+input[type=radio]
+  position: relative
+  width: 15px
+  height: 0px
+
+input[type=radio]::before,
+input[type=radio]::after
+  position: absolute
+  display: block
+  content: ''
+  border-radius: 50%
+  transition: .3s all esae
+
+input[type=radio]::before
+  top: -14px
+  left: -4px
+  width: 15px
+  height: 15px
+  border: 1px solid #ccc
+
+input[type=radio]::after
+  top: -11px
+  left: -1px
+  width: 11px
+  height: 11px
+  background-color: #fff
+
+input[type=radio]:checked::before
+  border-color: #27AE60
+
+input[type=radio]:checked::after
+  background-color: #27AE60
+
+/* 多选重写*/
+/*
+.span-checkbox
+  position: relative
+.checkbox
+  position: absolute
+  visibility: hidden
+.checkbox+.label
+  display: inline-block
+  width: 16px
+  height: 16px
+  border: 1px solid #fd8845
+.checkbox:checked + label:after
+  content: ""
+  position: absolute
+  left: 2px
+  bottom: 12px
+  width: 9px
+  height: 4px
+  border: 2px solid #fd8845
+  border-top-color: transparent
+  border-right-color: transparent
+  -ms-transform: rotate(-60deg)
+  -moz-transform: rotate(-60deg)
+  -webkit-transform: rotate(-60deg)
+  transform: rotate(-45deg)
+ */
+input[type=checkbox]
+  position: relative
+  width: 15px
+  height: 0px
+
+input[type=checkbox]::before,
+input[type=checkbox]::after
+  position: absolute
+  display: block
+  content: ''
+  //border-radius: 50%
+  transition: .3s all esae
+
+input[type=checkbox]::before
+  top: -14px
+  left: -4px
+  width: 15px
+  height: 15px
+  border: 1px solid #ccc
+  border-radius:5px
+
+input[type=checkbox]::after
+  top: -11px
+  left: -1px
+  width: 11px
+  height: 11px
+  background-color: #fff
+  border-radius:50%
+
+input[type=checkbox]:checked::before
+  border-color: #27AE60
+
+input[type=checkbox]:checked::after
+  content: ""
+  position: absolute
+  left: -1px
+  bottom: 12px
+  width: 9px
+  height: 4px
+  border: 2px solid #27AE60
+  border-top-color: transparent
+  border-right-color: transparent
+  -ms-transform: rotate(-60deg)
+  -moz-transform: rotate(-60deg)
+  -webkit-transform: rotate(-60deg)
+  transform: rotate(-45deg)
